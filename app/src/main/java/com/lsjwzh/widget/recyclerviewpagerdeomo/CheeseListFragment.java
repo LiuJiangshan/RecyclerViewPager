@@ -16,10 +16,6 @@
 
 package com.lsjwzh.widget.recyclerviewpagerdeomo;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -37,6 +33,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class CheeseListFragment extends Fragment {
     private int mIndex;
@@ -140,7 +140,6 @@ public class CheeseListFragment extends Fragment {
 
             Glide.with(holder.mImageView.getContext())
                     .load(Cheeses.getRandomCheeseDrawable())
-                    .fitCenter()
                     .into(holder.mImageView);
         }
 
